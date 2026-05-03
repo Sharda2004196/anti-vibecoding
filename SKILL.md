@@ -115,26 +115,6 @@ For existing projects: Analyze current state, document gaps, propose improvement
 
 ---
 
-## Project Types
-
-### New Projects
-Start from Phase 1 (Problem Definition) and proceed through all 8 phases.
-
-### Existing Projects
-Start from the appropriate phase based on current state:
-
-| Current State | Start At | Action |
-|---------------|----------|--------|
-| No documentation | Phase 1 | Document from scratch |
-| Partial requirements | Phase 2 | Fill gaps, then Phase 3 |
-| Code exists, no docs | Phase 4 | Document architecture first |
-| Working system, needs changes | Phase 7 | Review edge cases, then plan |
-| Bug fix needed | Phase 7 | Analyze failure scenarios |
-
-For existing projects: Analyze current state, document gaps, propose improvements, then implement.
-
----
-
 ## Document Handling
 
 ### PRD (Product Requirement Document)

@@ -86,17 +86,7 @@ Or simply explain what you're working on — the skill activates automatically w
 - Creating a PRD or TSD
 - Asking for structured, engineering-first guidance
 
-## New vs Existing Projects
-
-This skill works for **both new AND existing projects**:
-
-| Project State | Where to Start |
-|---------------|----------------|
-| Brand new project | Phase 1 (Problem Definition) |
-| Partial requirements | Phase 2-3 (Fill gaps) |
-| Code exists, no docs | Phase 4 (Document architecture) |
-| Working system, needs changes | Phase 7 (Review edge cases) |
-| Bug fix needed | Phase 7 (Analyze failures) |
+---
 
 ## New vs Existing Projects
 
