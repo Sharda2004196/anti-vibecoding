@@ -2,13 +2,15 @@
 
 > Enforce structured, disciplined, engineering-first thinking for any project or feature.
 
-A Claude Code skill that prevents "vibe coding" — the tendency to write code without clear requirements, architecture, or plan — and guides users through a rigorous engineering workflow.
+A universal skill that prevents "vibe coding" — the tendency to write code without clear requirements, architecture, or plan — and guides users through a rigorous engineering workflow.
+
+**Works with:** Claude Code, Cursor, Windsurf, VS Code Copilot, GitHub Copilot, and any AI coding assistant.
 
 ---
 
 ## What It Does
 
-When activated, this skill transforms Claude into a **senior software engineer and system architect** who:
+When activated, this skill transforms your AI assistant into a **senior software engineer and system architect** who:
 
 - Refuses to proceed with vague or incomplete requirements
 - Asks clarifying questions before assuming anything
@@ -18,35 +20,55 @@ When activated, this skill transforms Claude into a **senior software engineer a
 
 ---
 
-## Installation
+## Quick Start
 
-### Option 1: Clone to Your Skills Folder
+### Claude Code
 
 ```bash
-# Navigate to your Claude Code skills directory
-cd ~/.claude/skills
-
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/anti-vibecoding.git
-
-# Restart Claude Code to load the skill
+git clone https://github.com/Sharda2004196/anti-vibecoding.git ~/.claude/skills/anti-vibecoding
 ```
 
-### Option 2: Manual Installation
+Restart Claude Code, then activate with `/anti-vibecoding`
 
-1. Download or clone this repository
-2. Copy the `anti-vibecoding` folder to your Claude Code skills directory:
-   - **macOS/Linux:** `~/.claude/skills/anti-vibecoding`
-   - **Windows:** `C:\Users\YourUsername\.claude\skills\anti-vibecoding`
-3. Restart Claude Code
+---
 
-### Option 3: For Other AI Assistants
+### Cursor
 
-The principles and workflow defined in `SKILL.md` can be adapted to any AI coding assistant:
+```bash
+mkdir -p .cursor/rules
+cp -r anti-vibecoding/SKILL.md .cursor/rules/anti-vibecoding.md
+```
 
-1. Copy the contents of `SKILL.md`
-2. Create a custom instruction or system prompt based on the rules
-3. Reference the templates from `/templates` for PRD and TSD documents
+Add to Cursor Rules in Settings → Rules for AGENTS
+
+---
+
+### Windsurf (Codeium)
+
+Copy `SKILL.md` content into Windsurf's custom instructions or workspace settings.
+
+---
+
+### VS Code Copilot (antigravity)
+
+Paste `SKILL.md` content into GitHub Copilot Custom Instructions (VS Code Settings → Copilot → Custom Instructions).
+
+---
+
+### GitHub Copilot (Codex / Agent Mode)
+
+```bash
+mkdir -p .github
+cp anti-vibecoding/SKILL.md .github/copilot-instructions.md
+```
+
+---
+
+### Other AI Assistants
+
+1. Copy `SKILL.md` contents
+2. Paste into your AI assistant's system prompt/instructions
+3. Keep templates in `/templates` folder for reference
 
 ---
 
@@ -63,6 +85,30 @@ Or simply explain what you're working on — the skill activates automatically w
 - Working on any software project or feature
 - Creating a PRD or TSD
 - Asking for structured, engineering-first guidance
+
+## New vs Existing Projects
+
+This skill works for **both new AND existing projects**:
+
+| Project State | Where to Start |
+|---------------|----------------|
+| Brand new project | Phase 1 (Problem Definition) |
+| Partial requirements | Phase 2-3 (Fill gaps) |
+| Code exists, no docs | Phase 4 (Document architecture) |
+| Working system, needs changes | Phase 7 (Review edge cases) |
+| Bug fix needed | Phase 7 (Analyze failures) |
+
+## New vs Existing Projects
+
+This skill works for **both new AND existing projects**:
+
+| Project State | Where to Start |
+|---------------|----------------|
+| Brand new project | Phase 1 (Problem Definition) |
+| Partial requirements | Phase 2-3 (Fill gaps) |
+| Code exists, no docs | Phase 4 (Document architecture) |
+| Working system, needs changes | Phase 7 (Review edge cases) |
+| Bug fix needed | Phase 7 (Analyze failures) |
 
 ---
 
