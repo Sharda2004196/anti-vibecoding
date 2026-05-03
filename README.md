@@ -22,10 +22,13 @@ When activated, this skill transforms your AI assistant into a **senior software
 
 ## Quick Start
 
-### Claude Code
+### Claude Code (Recommended)
 
 ```bash
+# Via git clone
 git clone https://github.com/Sharda2004196/anti-vibecoding.git ~/.claude/skills/anti-vibecoding
+
+# Or manually: Copy this repo to ~/.claude/skills/anti-vibecoding/
 ```
 
 Restart Claude Code, then activate with `/anti-vibecoding`
@@ -34,24 +37,37 @@ Restart Claude Code, then activate with `/anti-vibecoding`
 
 ### Cursor
 
+**Option 1: Rules file**
 ```bash
 mkdir -p .cursor/rules
-cp -r anti-vibecoding/SKILL.md .cursor/rules/anti-vibecoding.md
+cp anti-vibecoding/SKILL.md .cursor/rules/anti-vibecoding.md
 ```
+Then add to Cursor: Settings → Rules for AGENTS → Add Rule → Select `anti-vibecoding.md`
 
-Add to Cursor Rules in Settings → Rules for AGENTS
+**Option 2: MCP Server (if available)**
+Add to Cursor's MCP servers configuration.
 
 ---
 
 ### Windsurf (Codeium)
 
-Copy `SKILL.md` content into Windsurf's custom instructions or workspace settings.
+Add `SKILL.md` content to Windsurf workspace instructions:
+1. Open Windsurf Settings → Workspace
+2. Add custom instructions or load from file
 
 ---
 
-### VS Code Copilot (antigravity)
+### VS Code Copilot / antigravity
 
-Paste `SKILL.md` content into GitHub Copilot Custom Instructions (VS Code Settings → Copilot → Custom Instructions).
+**Option 1: Custom Instructions**
+1. VS Code Settings → Extensions → Copilot → Custom Instructions
+2. Paste `SKILL.md` content
+
+**Option 2: Repository-level**
+```bash
+mkdir -p .github
+cp anti-vibecoding/SKILL.md .github/copilot-instructions.md
+```
 
 ---
 
@@ -60,6 +76,17 @@ Paste `SKILL.md` content into GitHub Copilot Custom Instructions (VS Code Settin
 ```bash
 mkdir -p .github
 cp anti-vibecoding/SKILL.md .github/copilot-instructions.md
+```
+
+---
+
+### npx / npm (For Node.js projects)
+
+```bash
+# Clone the repo
+npx degit Sharda2004196/anti-vibecoding anti-vibecoding
+
+# Then follow platform-specific setup above
 ```
 
 ---
